@@ -1,7 +1,7 @@
 def Imagename = "saigopi123456/tomcat"
 def Containername = "tomcatcontainer"
 node {
-    stage('SourceCode') {
+    stage('Git Checkout') {
         git branch: 'feature2', url: 'https://github.com/gopi732/Tomcat-CICD.git'
     }
     stage('Stop & Delete Previous Containers & remove unused images') {
