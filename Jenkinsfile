@@ -2,7 +2,7 @@ def Imagename = "saigopi123456/tomcat"
 def Containername = "tomcatcontainer"
 node {
     stage('SourceCode') {
-        git branch: 'feature2', url: 'https://github.com/gopi732/Tomcat-CICD.git'
+        git branch: 'master', url: 'https://github.com/gopi732/Scripted-Pipeline.git'
     }
     withEnv(['http_proxy=http://127.0.0.1:3128/', 'https_proxy=http://127.0.0.1:3128/', 'ftp_proxy=http://127.0.0.1:3128/', 'socks_proxy=socks://127.0.0.1:3128/']) {
         stage('Build image') {
