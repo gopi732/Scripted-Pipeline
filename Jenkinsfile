@@ -1,4 +1,4 @@
-def Imagename = "saigopi123456/tomcat"
+def Imagename = "saigopi123456/tomcat-scripted"
 def Containername = "tomcatcontainer"
 node {
     stage('SourceCode') {
