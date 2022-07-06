@@ -1,6 +1,6 @@
 def image = "saigopi123456/tomcat"
 def containerName = "tomcatcontainer"
-node ("slave") {
+node {
     stage('Git Checkout') {
          git branch: 'feature', url: 'https://github.com/gopi732/Tomcat-CICD.git'
     }
